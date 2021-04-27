@@ -1,11 +1,24 @@
 """
 Обучающая библиотека.
 
-Создана для изучения программирования на примере создания простых двумерных игр.
+Создана для изучения программирования на примере создания простых двуxмерных игр.
+
+Основные модули:
+  world - управление игровым окном
+
+  sprite - управление действующими объектами игры
+
+  actions - то же, что и спрайт, но в режиме анимации
+
+  sprite_text - работа с текстовыми спрайтами
+
+  event_decorators - модуль для работы с событиями
 """
 
 from wrap import w1 #wrap_py launcher
-from wrap_mENdRU import world, const, sprite, action
+from wrap_mENdRU import world, const, sprite, actions, sprite_text, event_decorators
+from wrap_mENdRU.event_decorators import * #import all event decotators in main module
+from wrap_mENdRU.const import *
 
 def add_sprite_dir(dir):
     """
